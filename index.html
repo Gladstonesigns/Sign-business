@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Sign Business</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    .logo {
+      font-size: 1.5rem;
+    }
+    .dropdown {
+      position: absolute;
+      left: 1rem;
+      top: 100%;
+      background: #fff;
+      color: #000;
+      display: none;
+      flex-direction: column;
+      border: 1px solid #ccc;
+    }
+    .dropdown a {
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      color: #000;
+    }
+    .dropdown a:hover {
+      background: #eee;
+    }
+    .menu {
+      position: relative;
+      cursor: pointer;
+    }
+    .menu:hover .dropdown {
+      display: flex;
+    }
+    .hero {
+      background: url('your-sign-image.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .about, .contact {
+      padding: 2rem;
+      background: #fff;
+      margin: 1rem;
+      border-radius: 8px;
+    }
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      color: #fff;
+    }
+    .contact-info {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="menu">
+      ☰ Categories
+      <div class="dropdown">
+        <a href="#indoor">Indoor Signs</a>
+        <a href="#outdoor">Outdoor Signs</a>
+        <a href="#vehicle">Vehicle Wraps</a>
+        <a href="#banners">Banners</a>
+        <a href="#digital">Digital/LED Signs</a>
+        <a href="#custom">Custom Designs</a>
+      </div>
+    </div>
+    <div class="logo">Your Sign Business</div>
+  </header>
+
+  <section class="hero">
+    <h1>Make Your Brand Stand Out</h1>
+    <p>Custom signs for every business need</p>
+    <button onclick="location.href='#contact'">Contact Us</button>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>We are a professional sign-making business with over 10 years of experience in designing and manufacturing high-quality signage for all purposes. Our mission is to make your brand shine through creative and durable sign solutions.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label>Name:</label><br />
+      <input type="text" name="name" required /><br /><br />
+      <label>Email:</label><br />
+      <input type="email" name="email" required /><br /><br />
+      <label>Message:</label><br />
+      <textarea name="message" rows="5" required></textarea><br /><br />
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p><strong>Email:</strong> info@yoursignbusiness.com</p>
+      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Location:</strong> 123 Sign St, Sign City, SS 12345</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Your Sign Business.
